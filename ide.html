@@ -3,25 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning IDE</title>
+    <title>IDE in a Nutshell</title>
+    <link rel="icon" type="image/x-icon" href="ide/assets/IDE.png">
 
     <script src="https://unpkg.com/monaco-editor@0.45.0/min/vs/loader.js"></script>
 
-    <link rel="stylesheet" href="ide/css/reset.css" />
     <link rel="stylesheet" href="ide/css/ide.css" />
 
     <script src="ide/js/files.js"></script>
     <script src="ide/js/editor.js"></script>
     <script src="ide/js/app.js"></script>
+    <script src="ide/js/run.js"></script>
   </head>
   <body>
     <header class="topbar">
-      <span>Learning IDE</span>
-      <a href="/">Back</a>
+      <div class="logo">
+        <img src="ide/assets/IDE.png" alt="IDE Logo" />
+        <span>IDE in a Nutshell</span>
+        <p style="font-size: 10px; color: #65c1ff;">Please be aware you may need to click on the tab to view text on intial load.</p>
+      </div>
+      <div class="sponsors">
+        <a href="https://public.mrharryw.dev/pages/codingcommons.html" target="_blank"><img src="/ide/assets/tcc.png" alt="Coding Commons" /></a>
+        <!--<a href="https://sponsor2.com" target="_blank"><img src="ide/assets/sponsor2.png" alt="Sponsor 2" /></a>-->
+        <!--<a href="https://sponsor3.com" target="_blank"><img src="ide/assets/sponsor3.png" alt="Sponsor 3" /></a>-->
+      </div>
+      <a href="https://mrharryw.dev/" style="color:#65c1ff; text-decoration:none; font-weight:bold;">Home</a>
     </header>
 
     <div class="tabs" id="tabs"></div>
 
+
     <div id="editor"></div>
+
+    <div id="output-container">
+      <button id="runBtn">Run</button>
+      <div id="output">Working Progress</div>
+    </div>
   </body>
 </html>
